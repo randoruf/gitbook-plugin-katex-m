@@ -22,9 +22,9 @@ module.exports = {
                 end: "$$"
             },
             process: function(blk) {
-                console.log(katex.version)
+                //console.log(katex.version)
                 var tex = blk.body;
-                console.log(tex);
+                //console.log(tex);
 
                 var isInline = !(tex[0] == "\n" | tex[0] == '\r');
                 var output = katex.renderToString(tex, {displayMode: !isInline});
